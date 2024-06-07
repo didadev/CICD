@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "98501032017",
+    "project_id": "fastlane-explore",
+    "storage_bucket": "fastlane-explore.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98501032017:android:9485725a98e50c8472e070",
+        "android_client_info": {
+          "package_name": "com.cicd_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDN5jJzJ7zNCfN6ZxhGpity_syA1AUj_Rs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

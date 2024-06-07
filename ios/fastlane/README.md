@@ -31,6 +31,14 @@ Description of what the lane does
 
 Create app on apple developer portal and apple store connect
 
+### ios sign_dev
+
+```sh
+[bundle exec] fastlane ios sign_dev
+```
+
+manage app development signing
+
 ----
 
 This README.md is auto-generated and will be re-generated every time [_fastlane_](https://fastlane.tools) is run.

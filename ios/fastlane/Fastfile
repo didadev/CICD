@@ -32,4 +32,17 @@ platform :ios do
       sku: 'CICD-Project',
     )
   end
+  desc "manage app development signing"
+  lane :sign_dev do
+    enable_automatic_code_signing(
+    path: "CICD_Project.xcodeproj",
+    )
+    
+    build_app(
+      workspace: "CICD_Project.xcworkspace",
+      configuration: "Debug",
+      scheme: "CICD_Project",
+    )
+  
+  end
 end

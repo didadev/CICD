@@ -31,6 +31,14 @@ Runs all the tests
 
 Prepare android release build
 
+### android beta_android
+
+```sh
+[bundle exec] fastlane android beta_android
+```
+
+Prepare android build and distribute the APK  to the firebaseappdistribution
+
 ----
 
 This README.md is auto-generated and will be re-generated every time [_fastlane_](https://fastlane.tools) is run.

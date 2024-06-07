@@ -26,8 +26,16 @@ platform :android do
   lane :build_android do
     gradle(
       task: "assembleRelease",
-  
 )
   end
-  
+
+  desc "Prepare android build and distribute the APK  to the firebaseappdistribution"
+  lane :beta_android do
+    build_android
+    firebase_app_distribution(
+      app: "1:98501032017:android:9485725a98e50c8472e070",
+      firebase_cli_token: "1//09nmPTigFhf6iCgYIARAAGAkSNwF-L9Ir_HUgdfOVRYuYPKAeVSFeRw66zJXUyo-AmQfvdQ4MUUnxkYUtpjWhd82x9f9zZ20YZ44",
+      groups: "my-testers"
+    )
+  end
 end
