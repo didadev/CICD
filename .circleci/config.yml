@@ -6,10 +6,9 @@ jobs:
       - image: circleci/android:api-30-node
     steps:
       - checkout
-      - run: echo "Im a job test within a workflow test"
+      - yarn deploy_android_beta
 
 workflows:
   deploy-workflow:
     jobs:
       - beta_android
-      - yarn deploy_android_beta
