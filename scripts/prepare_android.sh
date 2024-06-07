@@ -1,5 +1,5 @@
 cd android
 ./gradlew clean
-bundle install
+sudo /bin/ruby /usr/local/bin/bundle install --without production
 bundle exec fastlane install_plugins
 cd ..
