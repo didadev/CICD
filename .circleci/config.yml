@@ -1,14 +1,15 @@
 # .circleci/config.yml
 version: 2.1
 jobs:
-  try-job:
-    macos:
-      xcode: 14.0.1
+  beta_android:
+    docker:
+      - image: circleci/android:api-30-node
     steps:
       - checkout
       - run: echo "Im a job test within a workflow test"
 
 workflows:
-  test-workflow:
+  deploy-workflow:
     jobs:
-      - try-job
+      - beta_android
+      - yarn deploy_android_beta

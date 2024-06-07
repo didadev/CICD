@@ -31,6 +31,9 @@ platform :android do
 
   desc "Prepare android build and distribute the APK  to the firebaseappdistribution"
   lane :beta_android do
+    before_all do
+      setup_circle_ci
+    end
     build_android
     firebase_app_distribution(
       app: "1:98501032017:android:9485725a98e50c8472e070",

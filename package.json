@@ -8,7 +8,8 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
-    "deploy_betas": "bash scripts/prepare_beta_deploy.sh; bash scripts/deploy_beta.sh"
+    "deploy_ios_beta": "bash scripts/prepare_js.sh; bash scripts/prepare_ios.sh; bash scripts/deploy_ios_beta.sh",
+    "deploy_android_beta": "bash scripts/prepare_js.sh; bash scripts/prepare_android.sh; bash scripts/deploy_android_beta.sh"
   },
   "dependencies": {
     "@react-native-firebase/app": "^20.1.0",
