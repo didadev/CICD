@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   beta_android:
     docker:
-      - image: cimg/node:22.2.0
+      - image: cimg/android:2024.01.1-node
     steps:
       - checkout
       - run: yarn deploy_android_beta
