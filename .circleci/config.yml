@@ -6,7 +6,7 @@ jobs:
       - image: cimg/android:2024.01.1-node
     steps:
       - checkout
-      - echo $BASE64_KEYSTORE | base64 -d > cicd-project-upload-key.keystore
+      - echo BASE64_KEYSTORE | base64 -d > cicd-project-upload-key.keystore
       - run: yarn deploy_android_beta base64-keystore: BASE64_KEYSTORE
 
 workflows:
